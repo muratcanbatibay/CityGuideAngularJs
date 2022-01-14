@@ -1,0 +1,22 @@
+<main role="main" class="container">
+    <div class="row">
+        <div  class="col-md-6">
+            <h2 class="mt-3 pt-3" id="photoTitle">Fotoğraflar</h2>
+            <img  [src]="photos[0].url" alt="" id="preview">
+            <div *ngFor="let photo of photos" class="container">
+                <div class="img-prev">
+                    <div class="img-slide">
+                        <img [src]="photo.url" class="img-thumbnail" alt="..." id="imgtn">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+        <div *ngIf="city" class="col-md-6">
+            <h2 class="mt-3 pt-3">Notlarım</h2>
+            <h5>{{city.description}}</h5>
+        </div>
+    </div>
+</main>
