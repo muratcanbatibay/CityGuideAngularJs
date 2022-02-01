@@ -1,4 +1,3 @@
-
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
@@ -24,7 +23,7 @@ export class CityService {
   }
 
   getPhotosByCityId(cityId:number):Observable<Photo[]>{
-    let newPath=this.apiUrl+"Cities/photos/?id="+cityId;
+    let newPath=this.apiUrl+"cities/photos?id="+cityId;
     return this.httpClient.get<Photo[]>(newPath)
   }
 
