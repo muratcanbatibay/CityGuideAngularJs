@@ -1,10 +1,11 @@
+
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
 
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import {HttpClientModule} from "@angular/common/http";
-
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -13,6 +14,9 @@ import { NavComponent } from './component/nav/nav.component';
 import { CityComponent } from './component/city/city.component';
 import { CityDetailComponent } from './component/city-detail/city-detail.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CityAddComponent } from './component/city-add/city-add.component';
+import { LoginComponent } from './component/login/login.component';
+
 
 
 
@@ -25,6 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     NavComponent,
     CityComponent,
     CityDetailComponent,
+    CityAddComponent,
+    LoginComponent,
   
     
   ],
@@ -34,12 +40,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HttpClientModule,
     RouterModule,
     NgxGalleryModule,
-    BrowserAnimationsModule
-    
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
    
-    
+   
 
-    
   ],
   providers: [],
   bootstrap: [AppComponent]

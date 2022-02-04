@@ -9,7 +9,10 @@ export class NavComponent implements OnInit {
 
   constructor() { }
 
+  logginUser:any={}
+
   ngOnInit(): void {
   }
+
 
 }

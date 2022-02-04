@@ -81,7 +81,7 @@ export class CityDetailComponent implements OnInit {
       // max-width 400
       {
         breakpoint: 400,
-        preview: false
+        preview: true
       }
     ];
 
